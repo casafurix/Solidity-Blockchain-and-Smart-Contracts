@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-with open("./SimpleStorage.sol", "r") as file:
+with open("demos/web3_py_simple_storage/SimpleStorage.sol", "r") as file:
     simple_storage_file = file.read()
 
 install_solc("0.8.0")
