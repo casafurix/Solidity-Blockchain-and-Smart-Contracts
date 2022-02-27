@@ -71,7 +71,7 @@ contract Lottery is VRFConsumerBase, Ownable {
         //     ) % players.length;
         // }
         lottery_state = LOTTERY_STATE.CALCULATING_WINNER;
-        bytes32 requestID = requestRandomness(keyhash, fee);
+        bytes32 requestID = requestRandomness(keyhash, fee); //link tokens required for requestRandomness function
     }
 
     function fulfillRandomness(bytes32 _requestID, uint256 _randomness)
