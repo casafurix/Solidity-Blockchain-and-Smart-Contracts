@@ -78,7 +78,7 @@ def deploy_mocks(decimals=DECIMALS, initial_value=INITIAL_VALUE):
 
 
 def fund_with_link(
-    contract_address, account=None, link_token=None, amount=500000000000000000
+    contract_address, account=None, link_token=None, amount=100000000000000000
 ):
     # 0.1 LINK
     account = account if account else get_account()
