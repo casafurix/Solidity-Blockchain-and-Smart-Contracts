@@ -1,4 +1,3 @@
-from random import sample
 from scripts.helpful_scripts import (
     get_account,
     OPENSEA_URL,
@@ -23,6 +22,7 @@ def deploy_and_create():
     creating_tx = advanced_collectible.createCollectible({"from": account})
     creating_tx.wait(1)
     print("New token has been created!")
+    return advanced_collectible, creating_tx
 
 
 def main():
